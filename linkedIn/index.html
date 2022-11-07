@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <!-- Navbar Start Here -->
+    <nav class="navbar">
+        <!-- Nav-left -->
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <!-- Nav-center -->
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="img/profile-home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="img/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="img/profile-job.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="img/messaging.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="img/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Nav-right -->
+        <div class="navbar-right">
+            <div class="online">
+                <img src="img/man-1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -----Profile drop down menu-------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="img/man-1.jpg">
+                    <div>
+                        <h3>Ted Mosby</h3>
+                        <small>Web Developer</small>
+                    </div>
+                </div>
+                <b><a href="profile.html">View Profile</a></b>
+            </div>
+
+            <div class="drop-down-activity">
+                <h3>Account</h3>
+                <a href="#">Settings & Privacy</a>
+                <a href="#">Help</a>
+                <a href="#">Language</a>
+            </div>
+
+            <div class="drop-down-activity">
+                <h3>Manage</h3>
+                <a href="#">Post and Activity</a>
+                <a href="#">Job Posting Account</a>
+
+            </div>
+            <div class="drop-down-activity">
+
+                <a href="#">Log Out</a>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- ------ content--- -->
+
+    <div class="container">
+        <!-- --------Left sidebar----- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="img/cover.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="img/man-1.jpg">
+                    <h1>Ted Mosby</h1>
+                    <h3>Web Developer at Microsoft</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>948</span></li>
+                        <li>Your connections <span>345</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="img/saved.png">My items</a>
+                    <a href="#"><img src="img/premium.png">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="img/time.png">Web Development</a>
+                <a href="#"><img src="img/time.png">User Interface</a>
+                <a href="#"><img src="img/time.png">Online Learning</a>
+                <a href="#"><img src="img/time.png">Coding Competition</a>
+                <a href="#"><img src="img/time.png">Group Discussion</a>
+                <a href="#"><img src="img/time.png">New Technologies</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="img/group.png">Web Design</a>
+                <a href="#"><img src="img/group.png">HTML & CSS Learner</a>
+                <a href="#"><img src="img/group.png">Python and JavaScricpt</a>
+                <a href="#"><img src="img/group.png">Editing</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="img/hashtag.png">webdevelopment</a>
+                <a href="#"><img src="img/hashtag.png">userinterface</a>
+                <a href="#"><img src="img/hashtag.png">onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+
+
+        <!-- ----------Main content------ -->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="img/man-1.jpg">
+                    <textarea rows="2" placeholder="Start a post"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><img src="img/photo.png">Photo</li>
+                    <li><img src="img/video.png">Video</li>
+                    <li><img src="img/event.png">Event</li>
+                    <li><img src="img/article.png">Write article</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span><b>Top <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16"
+                                height="16" focusable="false">
+                                <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+                            </svg></b></span></p>
+            </div>
+
+            <div class="post">
+                <img src="img/more.png" class="post-info-icon">
+                <div class="post-author">
+                    <img src="img/member-3.png">
+                    <div>
+                        <div class="post-author-name">
+                            <h1>Paula Reed </h1>
+                            <small>• following</small>
+                        </div>
+                        <small>Co-chair, Someity Foundation</small>
+                        <small>1 d • <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16"
+                                height="16" focusable="false">
+                                <path
+                                    d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z">
+                                </path>
+                            </svg> </small>
+                    </div>
+                </div>
+                <p>If what everyone else is doing isn't working for we need swith something up and take a break. Just go
+                    for a vacation....</p>
+                <img src="img/outdoor.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="img/applause.png">
+                        <img src="img/heart.png">
+                        <img src="img/like-blue.png">
+                        <span class="liked-user">Ross Geller and 2,134 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 5 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="img/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="img/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div>
+                        <img src="img/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/more.png" class="post-info-icon">
+                <div class="post-author">
+                    <img src="img/man-2.jpg">
+                    <div>
+                        <div class="post-author-name">
+                            <h1>#jobseekers </h1>
+                            <small>• following</small>
+                        </div>
+
+                        <small>2 d • Post from &#160; <span> <b>Ash Rathod</b></span> </small>
+                    </div>
+                </div>
+                <p>LinkedIn: We need more focus on this in the Job Search
+
+                    <br>
+                    <br>
+                    Always remember this when on the job search that…
+
+                    <br>
+                    <br>
+                    💡If you ever get an interview at a company it means you are qualified!
+                    <br>
+                    <br>
+                    💡If you get rejected for a role after interviewing, they may be only just hiring one person and you
+                    were #2
+                    <br>
+                    <br>
+                    💡If any rejections happen throughout the interview process, stay in touch and if you see another
+                    position that fits your qualifications, forward it!
+                </p>
+                <img src="img/post-1.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="img/applause.png">
+                        <img src="img/heart.png">
+                        <img src="img/like-blue.png">
+                        <span class="liked-user">Ram Reddy and 1,456 others</span>
+                    </div>
+                    <div>
+                        <span>7 comments &middot; 2 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="img/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="img/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div>
+                        <img src="img/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/more.png" class="post-info-icon">
+                <div class="post-author">
+                    <img src="img/Bill Gates.jpg">
+                    <div>
+                        <div class="post-author-name">
+                            <h1>Bill Gates</h1>
+                            <small>• following</small>
+                        </div>
+                        <small>Co-chair, Bill & Melinda Gates Foundation</small>
+                        <small>6h • <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16"
+                                height="16" focusable="false">
+                                <path
+                                    d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z">
+                                </path>
+                            </svg> </small>
+                    </div>
+                </div>
+                <p>I’m leaving day 1 of Breakthrough Energy Summit feeling optimistic about the future after meeting
+                    with innovators who are developing the solutions we need to reach net-zero emissions.</p>
+                <img src="img/Summit.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="img/applause.png">
+                        <img src="img/heart.png">
+                        <img src="img/like-blue.png">
+                        <span class="liked-user">Jon Reed and 4,431 others</span>
+                    </div>
+                    <div>
+                        <span>3,235 comments &middot; 543 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="img/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="img/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div>
+                        <img src="img/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/more.png" class="post-info-icon">
+                <div class="post-author">
+                    <img src="img/member-9.png">
+                    <div>
+                        <div class="post-author-name">
+                            <h1>#jobseekers </h1>
+                            <small>• following</small>
+                        </div>
+
+                        <small>11h • Post from &#160; <span> <b>Ash Rathod</b></span> </small>
+                    </div>
+                </div>
+                <p>Jobseeker/Recruiter Connection post!
+                    <br>
+                    <br>
+                    Let's show ALL the jobseekers some love!!
+                    <br>
+                    <br>
+                    ⫸Recruiters are welcome to post their jobs!
+                    <br>
+                    <br>
+                    ⫸Jobseekers are welcome to post what they are looking for & what they bring to the table in the
+                    comments!
+                </p>
+                <img src="img/jobseekers.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="img/applause.png">
+                        <img src="img/heart.png">
+                        <img src="img/like-blue.png">
+                        <span class="liked-user">Ram Reddy and 1,456 others</span>
+                    </div>
+                    <div>
+                        <span>7 comments &middot; 2 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="img/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="img/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div>
+                        <img src="img/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/more.png" class="post-info-icon">
+                <div class="post-author">
+                    <img src="img/Bill Gates.jpg">
+                    <div>
+                        <div class="post-author-name">
+                            <h1>Bill Gates</h1>
+                            <small>• following</small>
+                        </div>
+                        <small>Co-chair, Bill & Melinda Gates Foundation</small>
+                        <small>2d • <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16"
+                                height="16" focusable="false">
+                                <path
+                                    d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z">
+                                </path>
+                            </svg> </small>
+                    </div>
+                </div>
+                <p>Reaching net-zero emissions will be the hardest thing humanity has ever done, and it will require
+                    unprecedented collaboration across all parts of society. Spending the past few days at the
+                    Breakthrough Energy Summit has left me with an increased sense of hope that together we can
+                    accelerate the clean energy transition and avoid a climate disaster. </p>
+                <img src="img/summit -2.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="img/applause.png">
+                        <img src="img/heart.png">
+                        <img src="img/like-blue.png">
+                        <span class="liked-user">Sharen and 45,233 others</span>
+                    </div>
+                    <div>
+                        <span>439 comments &middot; 34 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="img/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="img/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div>
+                        <img src="img/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/more.png" class="post-info-icon">
+                <div class="post-author">
+                    <img src="img/member-8.png">
+                    <div>
+                        <div class="post-author-name">
+                            <h1>Sara Ford </h1>
+                            <small>• following</small>
+                        </div>
+                        <small>Fitness Expert</small>
+                        <small>1h • <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16"
+                                height="16" focusable="false">
+                                <path
+                                    d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z">
+                                </path>
+                            </svg> </small>
+                    </div>
+                </div>
+                <p>Start your life with YOGA and live fresh for all day without any tensions..</p>
+                <img src="img/yoga.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="img/applause.png">
+                        <img src="img/heart.png">
+                        <img src="img/like-blue.png">
+                        <span class="liked-user">Roy James and 45 others</span>
+                    </div>
+                    <div>
+                        <span>3 comments &middot; 0 reposts</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="img/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="img/repost.png">
+                        <span>Repost</span>
+                    </div>
+                    <div>
+                        <img src="img/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- ------Right Sidebar------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="img/more.png" class="info-icon">
+                <h1>LinkedIn News</h1>
+                <a href="#">Tech Mahindra to hire 3,000</a>
+                <span>4d ago &middot; 10,984 readers</span>
+
+                <a href="#">Are you worried about a recession?</a>
+                <span>5d ago &middot; 18,984 readers</span>
+
+                <a href="#">UK PM Truss resigns after six weeks</a>
+                <span>2d ago &middot; 4,984 readers</span>
+
+                <a href="#">Web3 startups on the rise</a>
+                <span>22h ago &middot; 1,398 readers</span>
+
+                <a href="#">All to play a bog role in ed-tech?</a>
+                <span>5h ago &middot; 22,764 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="img/member-1.png">
+                    <img src="img/fedex.png">
+                </div>
+                <b>Brand and Demand in Fedex</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad</small>
+                <p>Master the 5 principles</p>
+            </div>
+
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privicy & Terms <img src="img/expand down arrow.png"></a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business Services <img src="img/expand down arrow.png"></a>
+                <a href="#">Get the Linkedin app</a>
+                <a href="#">More</a>
+            </div>
+
+            <div class="copyright-msg">
+                <img src="img/linkedin-logo-png-1849.png">
+                <p>LinkedIn Corporation &#169; 2022.</p>
+            </div>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
